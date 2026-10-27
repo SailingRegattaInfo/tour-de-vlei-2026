@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Race 1 of the 2026 Tour de Vlei at Vogelvlei Yacht Club in numbers: the finish line rush, the gaps, the handicap upsets, the classes and the clubs.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tour de Vlei 2026 in numbers">
+<meta property="og:description" content="Race 1 of the 2026 Tour de Vlei at Vogelvlei Yacht Club in numbers: the finish line rush, the gaps, the handicap upsets, the classes and the clubs.">
+<meta property="og:url" content="https://modelmax-source.github.io/tour-de-vlei-2026/">
+<meta property="og:image" content="https://modelmax-source.github.io/tour-de-vlei-2026/preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230c2a43'/%3E%3Cpath d='M16 5 L16 24 L7 24 Z' fill='%23eaf2f8'/%3E%3Cpath d='M18 9 L18 24 L25 24 Z' fill='%23e5602a'/%3E%3Cpath d='M5 26 H27' stroke='%232a78d6' stroke-width='2'/%3E%3C/svg%3E">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Tour de Vlei 2026 Numbers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=DM+Mono:wght@400;500&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout: a race day read top to bottom. Deep water hero, then chapters on sailcloth: the line, the gaps, the upsets, the classes, the clubs. */
+:root{
+  --bg:#f3f6f8;
+  --surface:#ffffff;
+  --ink:#0d2233;
+  --ink-2:#46596b;
+  --ink-3:#6f8293;
+  --rule:#d8e0e7;
+  --grid:#e6ecf1;
+  --water:#0c2a43;
+  --water-2:#123a5a;
+  --water-ink:#eaf2f8;
+  --water-ink-2:#a9c2d6;
+  --buoy:#e5602a;
+  --buoy-ink:#b8461a;
+  --dinghy:#2a78d6;
+  --multi:#1baf7a;
+  --mute-mark:#bccad6;
+  --band:rgba(229,96,42,.10);
+  --f-display:"Big Shoulders Display","Arial Narrow","Roboto Condensed",sans-serif;
+  --f-body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  --f-data:"DM Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0a1620;--surface:#0f1f2c;--ink:#e6edf3;--ink-2:#a8b8c6;--ink-3:#8293a3;--rule:#21323f;--grid:#1a2a37;
+    --water:#071725;--water-2:#0d2638;--water-ink:#e6edf3;--water-ink-2:#93adc2;
+    --buoy:#f07a45;--buoy-ink:#f39265;--dinghy:#3987e5;--multi:#199e70;--mute-mark:#3a4c5b;--band:rgba(240,122,69,.14);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0a1620;--surface:#0f1f2c;--ink:#e6edf3;--ink-2:#a8b8c6;--ink-3:#8293a3;--rule:#21323f;--grid:#1a2a37;
+  --water:#071725;--water-2:#0d2638;--water-ink:#e6edf3;--water-ink-2:#93adc2;
+  --buoy:#f07a45;--buoy-ink:#f39265;--dinghy:#3987e5;--multi:#199e70;--mute-mark:#3a4c5b;--band:rgba(240,122,69,.14);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.num,.t{font-family:var(--f-data);font-variant-numeric:tabular-nums}
+
+/* hero */
+.hero{background:var(--water);color:var(--water-ink);position:relative}
+.hero .wrap{padding-block:48px 28px;display:grid;gap:28px}
+.eyebrow{font-family:var(--f-data);font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--water-ink-2);display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
+.flag{display:inline-block;width:22px;height:15px;background:var(--dinghy);border-radius:1px;position:relative;flex:none}
+.flag::after{content:"";position:absolute;inset:4px 7px;background:var(--water-ink)}
+h1{font-family:var(--f-display);font-weight:800;text-transform:uppercase;font-size:clamp(56px,11vw,128px);line-height:.86;letter-spacing:.005em;margin:0;text-wrap:balance}
+h1 .yr{color:var(--buoy)}
+.lede{font-size:clamp(18px,2.2vw,21px);max-width:38ch;color:var(--water-ink);margin:0}
+.tally{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1px;background:var(--water-2);border:1px solid var(--water-2);border-radius:6px;overflow:hidden}
+.tally div{background:var(--water);padding:14px 14px 12px;min-width:0}
+.tally b{display:block;font-family:var(--f-display);font-weight:800;font-size:clamp(34px,4.6vw,48px);line-height:1;font-variant-numeric:tabular-nums}
+.tally span{display:block;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--water-ink-2);margin-top:6px}
+.wave{display:block;width:100%;height:28px;background:var(--water)}
+.wave path{fill:var(--bg)}
+@media (max-width:760px){.tally{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* sections */
+main .wrap{display:grid;gap:72px;padding-block:40px 72px}
+section{display:grid;gap:22px;min-width:0}
+.kicker{font-family:var(--f-data);font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--buoy-ink);display:flex;align-items:center;gap:10px}
+.kicker::before{content:"";width:12px;height:12px;border-radius:50%;background:var(--buoy);flex:none}
+h2{font-family:var(--f-display);font-weight:800;text-transform:uppercase;font-size:clamp(34px,5vw,52px);line-height:.95;margin:6px 0 0;text-wrap:balance}
+.intro{max-width:64ch;color:var(--ink-2);margin:0}
+.intro strong{color:var(--ink);font-weight:700}
+.head{display:grid;gap:4px}
+
+.panel{background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:18px 18px 12px;min-width:0}
+.panel h3{font-size:15px;font-weight:700;margin:0 0 2px}
+.panel .sub{font-size:14px;color:var(--ink-3);margin:0 0 10px}
+.chart{width:100%;min-width:0;position:relative}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14px;color:var(--ink-2);margin:0 0 6px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:7px;vertical-align:0}
+.legend .d{background:var(--dinghy)} .legend .m{background:var(--multi);border-radius:1px;transform:rotate(45deg) scale(.9)}
+.legend .h{background:var(--buoy)} .legend .g{background:var(--mute-mark)}
+
+/* svg classes */
+.ax{font-family:var(--f-data);font-size:11.5px;fill:var(--ink-3)}
+.lab{font-family:var(--f-body);font-size:13px;fill:var(--ink-2)}
+.lab-b{font-family:var(--f-body);font-size:13px;font-weight:700;fill:var(--ink)}
+.val{font-family:var(--f-data);font-size:12px;fill:var(--ink)}
+.gl{stroke:var(--grid);stroke-width:1}
+.base{stroke:var(--rule);stroke-width:1}
+.mk-d{fill:var(--dinghy)} .mk-m{fill:var(--multi)} .mk-h{fill:var(--buoy)} .mk-g{fill:var(--mute-mark)}
+.ring{stroke:var(--surface);stroke-width:2}
+.ln-g{stroke:var(--mute-mark);stroke-width:1.5;fill:none}
+.ln-h{stroke:var(--buoy);stroke-width:2.5;fill:none}
+.bandr{fill:var(--band)}
+.hit{fill:transparent;cursor:default}
+.hit:focus{outline:none}
+.hit:focus-visible{stroke:var(--ink);stroke-width:1.5}
+
+/* fact cards */
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.fact{border-top:3px solid var(--ink);padding-top:12px;min-width:0}
+.fact .big{font-family:var(--f-display);font-weight:800;font-size:44px;line-height:1;font-variant-numeric:tabular-nums}
+.fact .big small{font-size:22px;margin-left:2px}
+.fact p{margin:6px 0 0;color:var(--ink-2);font-size:15.5px}
+.fact p strong{color:var(--ink)}
+.fact.d{border-color:var(--dinghy)} .fact.m{border-color:var(--multi)} .fact.h{border-color:var(--buoy)}
+
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+@media (max-width:760px){.two{grid-template-columns:1fr}}
+
+.fleetcard{background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:18px;display:grid;gap:10px;min-width:0}
+.fleetcard header{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.fleetcard h3{font-family:var(--f-display);font-weight:800;text-transform:uppercase;font-size:28px;margin:0;line-height:1;display:flex;align-items:center;gap:10px}
+.fleetcard h3 i{width:12px;height:12px;border-radius:50%;display:inline-block}
+.fleetcard.d h3 i{background:var(--dinghy)} .fleetcard.m h3 i{background:var(--multi);border-radius:1px;transform:rotate(45deg)}
+.fleetcard .win{font-size:15px;color:var(--ink-2)}
+.fleetcard dl{display:grid;grid-template-columns:1fr auto;gap:0;margin:0}
+.fleetcard dt,.fleetcard dd{padding:8px 0;border-top:1px solid var(--rule);margin:0;font-size:15.5px}
+.fleetcard dt{color:var(--ink-2)}
+.fleetcard dd{font-family:var(--f-data);font-variant-numeric:tabular-nums;text-align:right;color:var(--ink)}
+.fleetcard dd em{font-style:normal;color:var(--ink-3);margin-left:8px}
+
+.note{font-size:14px;color:var(--ink-3);margin:0;max-width:70ch}
+.callout{font-size:18px;max-width:60ch;margin:0;padding-left:16px;border-left:3px solid var(--buoy)}
+
+/* photo finishes */
+.photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.photo{background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:16px;display:grid;gap:8px;align-content:start;min-width:0}
+.photo .gap{font-family:var(--f-display);font-weight:800;font-size:52px;line-height:.9}
+.photo .gap small{font-size:22px;margin-left:3px;color:var(--ink-2)}
+.photo .who{font-size:15.5px;color:var(--ink)}
+.photo .ctx{font-size:14px;color:var(--ink-3)}
+.photo .pill{justify-self:start;font-family:var(--f-data);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:99px;border:1px solid var(--rule);color:var(--ink-2)}
+
+/* clubs */
+.tablewrap{overflow-x:auto;background:var(--surface);border:1px solid var(--rule);border-radius:8px}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:15.5px}
+th,td{padding:11px 14px;text-align:left;border-top:1px solid var(--rule);vertical-align:top}
+thead th{border-top:0;font-family:var(--f-data);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);font-weight:500}
+td.n{font-family:var(--f-data);font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+th.n{text-align:right}
+td .bar{display:inline-block;height:8px;border-radius:0 4px 4px 0;background:var(--dinghy);vertical-align:middle;margin-left:8px}
+td.club{font-weight:700}
+td.wins{color:var(--ink-2)}
+
+footer{border-top:1px solid var(--rule)}
+footer .wrap{padding-block:22px 36px;display:grid;gap:6px}
+
+/* tooltip */
+.tip{position:fixed;z-index:20;pointer-events:none;background:var(--ink);color:var(--bg);font-size:13.5px;line-height:1.4;padding:8px 10px;border-radius:6px;max-width:260px;box-shadow:0 4px 18px rgba(0,0,0,.18)}
+.tip b{display:block;font-size:14px}
+.tip .t{font-size:12.5px;opacity:.9}
+@media (prefers-reduced-motion:no-preference){.hit{transition:none}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><span class="flag" aria-hidden="true"></span><span>Vogelvlei Yacht Club</span><span>Race 1</span><span>Sunday 25 October 2026</span></div>
+    <h1>Tour de Vlei <span class="yr">2026</span></h1>
+    <p class="lede">Two starts, two fleets and a whole afternoon on the water. Here is how the race played out in numbers.</p>
+    <div class="tally" role="list">
+      <div role="listitem"><b>54</b><span>Boats entered</span></div>
+      <div role="listitem"><b>81</b><span>Sailors</span></div>
+      <div role="listitem"><b>19</b><span>Classes</span></div>
+      <div role="listitem"><b>9</b><span>Clubs</span></div>
+      <div role="listitem"><b>50<small style="font-size:.5em">/53</small></b><span>Starters finished</span></div>
+      <div role="listitem"><b>124</b><span>Hours of racing</span></div>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1200 28" preserveAspectRatio="none" aria-hidden="true"><path d="M0 28 L0 16 Q 37.5 4 75 16 T 150 16 T 225 16 T 300 16 T 375 16 T 450 16 T 525 16 T 600 16 T 675 16 T 750 16 T 825 16 T 900 16 T 975 16 T 1050 16 T 1125 16 T 1200 16 L1200 28 Z"/></svg>
+</header>
+
+<main>
+<div class="wrap">
+
+<section id="line">
+  <div class="head">
+    <div class="kicker">At the finish</div>
+    <h2>The line, minute by minute</h2>
+  </div>
+  <p class="intro">The cats got away at <span class="t">14:01</span> and the dinghies at <span class="t">14:06</span>. The Fireball was first boat home at <span class="t">15:55:08</span> and the last Dart crossed at <span class="t">17:31:02</span>, so the finish boat was busy for an hour and 36 minutes. Each dot below is one boat crossing the line.</p>
+  <div class="panel">
+    <div class="legend"><span><i class="d"></i>Dinghy fleet</span><span><i class="m"></i>Multihull fleet</span><span><i class="h" style="border-radius:2px;opacity:.5"></i>Busiest ten minutes</span></div>
+    <div class="chart" id="c-line" role="img" aria-label="Finish times of all 50 finishers by clock time, dinghies bunched from 16:04 to 16:17, multihulls from 16:37 to 17:31"></div>
+  </div>
+  <div class="facts">
+    <div class="fact h"><div class="big">21</div><p>boats crossed in the ten minutes from <span class="t">16:04:54</span>. That is 42% of all finishers.</p></div>
+    <div class="fact"><div class="big">4<small>in 41s</small></div><p>Busiest minute at <span class="t">16:55</span>: two Mosquitos, a Dart and the RS Feva, from both fleets, all inside 41 seconds.</p></div>
+    <div class="fact"><div class="big">4:31</div><p>How far the Fireball was clear of the next boat home, the Active 15.</p></div>
+    <div class="fact"><div class="big">3:30:02</div><p>Longest day on the water, J Kassner in a Dart.</p></div>
+  </div>
+</section>
+
+<section id="gaps">
+  <div class="head">
+    <div class="kicker">Corrected time</div>
+    <h2>How close was it?</h2>
+  </div>
+  <p class="intro">On handicap the dinghy fleet was <strong>more than twice as tight</strong> at the top as the cats. A big, evenly matched Extra fleet did a lot of that work.</p>
+  <div class="two">
+    <article class="fleetcard d">
+      <header><h3><i></i>Dinghies</h3><span class="win">34 finishers</span></header>
+      <div class="win">Won by Stephen du Toit, Extra, in <span class="t">1:44:18</span></div>
+      <dl>
+        <dt>2nd place</dt><dd>0:40<em>0.6%</em></dd>
+        <dt>Top 3 spread</dt><dd>0:58<em>0.9%</em></dd>
+        <dt>Top 10 spread</dt><dd>5:33<em>5.3%</em></dd>
+        <dt>Half the fleet within</dt><dd>7:12<em>6.9%</em></dd>
+        <dt>Last finisher</dt><dd>41:02<em>39%</em></dd>
+      </dl>
+    </article>
+    <article class="fleetcard m">
+      <header><h3><i></i>Multihulls</h3><span class="win">16 finishers</span></header>
+      <div class="win">Won by John Ryall, Hobie 14, in <span class="t">2:19:18</span></div>
+      <dl>
+        <dt>2nd place</dt><dd>1:26<em>1.0%</em></dd>
+        <dt>Top 3 spread</dt><dd>5:03<em>3.6%</em></dd>
+        <dt>Top 10 spread</dt><dd>16:49<em>12.1%</em></dd>
+        <dt>Half the fleet within</dt><dd>15:28<em>11.1%</em></dd>
+        <dt>Last finisher</dt><dd>30:34<em>22%</em></dd>
+      </dl>
+    </article>
+  </div>
+  <div class="panel">
+    <h3>Gap to the fleet winner</h3>
+    <p class="sub">Corrected time behind 1st, by finishing place</p>
+    <div class="legend"><span><i class="d"></i>Dinghy fleet</span><span><i class="m"></i>Multihull fleet</span></div>
+    <div class="chart" id="c-gap" role="img" aria-label="Minutes behind the winner by place. Dinghies stay under 8 minutes to 17th place then spread to 41 minutes. Multihulls spread steadily to 31 minutes."></div>
+  </div>
+</section>
+
+<section id="upsets">
+  <div class="head">
+    <div class="kicker">Handicap upsets</div>
+    <h2>First home is not first</h2>
+  </div>
+  <p class="intro">Handicaps reshuffled both fleets. In the cats the quickest boats on the water had the hardest time on corrected, and the slowest rated boat on the course won.</p>
+  <div class="two">
+    <div class="panel">
+      <h3>Multihulls: across the line vs on handicap</h3>
+      <p class="sub">Each line is one boat. Hover or tap for the crew.</p>
+      <div class="legend"><span><i class="h"></i>Biggest movers</span><span><i class="g"></i>Rest of the fleet</span></div>
+      <div class="chart" id="c-slope" role="img" aria-label="Slope chart: Hobie 14 went from 14th across the line to 1st on handicap, Hobie Tiger from 1st to 10th, Tornado from 2nd to 16th"></div>
+    </div>
+    <div style="display:grid;gap:14px;align-content:start;min-width:0">
+      <div class="fact h"><div class="big">14th <small>to</small> 1st</div><p><strong>John Ryall, Hobie 14.</strong> Third last boat across the line, winner of the multihull fleet by 1:26.</p></div>
+      <div class="fact h"><div class="big">2nd <small>to</small> 16th</div><p><strong>Tornado.</strong> Second cat home, last of the finishers on corrected time.</p></div>
+      <div class="fact d"><div class="big">1st <small>to</small> 20th</div><p><strong>Fireball.</strong> First boat home of the whole event, 20th in the dinghy fleet on handicap.</p></div>
+      <div class="fact d"><div class="big">11th <small>to</small> 32nd</div><p><strong>29er.</strong> Mid fleet on the water, near the back once the rating kicked in.</p></div>
+      <div class="fact d"><div class="big">+5 <small>places</small></div><p>The five Extras that crossed 13th to 17th each gained exactly five places, ending 8th to 12th.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="classes">
+  <div class="head">
+    <div class="kicker">Class against class</div>
+    <h2>Which boats did the day suit?</h2>
+  </div>
+  <p class="intro">Best boat from each class, measured against its fleet winner. In the cats the pattern is clean: <strong>the slower the rating, the better the result</strong>. In the dinghies the mid rated boats did best, with the fastest rated (29er, Fireball) and the slowest (Gypsy, RS Feva) furthest back.</p>
+  <div class="panel">
+    <h3>Best boat per class, behind its fleet winner</h3>
+    <p class="sub">Corrected time. Tooltip shows the rating that would have tied the winner.</p>
+    <div class="legend"><span><i class="d"></i>Dinghy fleet</span><span><i class="m"></i>Multihull fleet</span></div>
+    <div class="chart" id="c-class" role="img" aria-label="Percentage behind the fleet winner for the best boat of each class"></div>
+  </div>
+  <p class="note">Where a class had only one boat, the number says as much about that crew as about the design. Bigger classes also have a better chance of fielding a top sailor.</p>
+</section>
+
+<section id="margins">
+  <div class="head">
+    <div class="kicker">Class results</div>
+    <h2>Winning margins</h2>
+  </div>
+  <p class="intro">Every class with two or more finishers. The Extras were decided by 40 seconds on corrected time. Bradley and Saskia Stemmett won the Darts by <strong>14 minutes</strong>.</p>
+  <div class="panel">
+    <h3>Gap from class winner to 2nd</h3>
+    <p class="sub">Corrected time, as a share of the winner's time</p>
+    <div class="legend"><span><i class="d"></i>Dinghy fleet</span><span><i class="m"></i>Multihull fleet</span></div>
+    <div class="chart" id="c-margin" role="img" aria-label="Winning margins by class, from Extra 40 seconds to Bosun 24 minutes 50"></div>
+  </div>
+</section>
+
+<section id="extra">
+  <div class="head">
+    <div class="kicker">Biggest class</div>
+    <h2>The Extra fleet up close</h2>
+  </div>
+  <p class="intro">18 Extras entered, a third of the whole event. Everyone sailed off the same 1140 rating, so the order on the water is the result. They took <strong>11 of the top 12</strong> places in the dinghy fleet.</p>
+  <div class="panel">
+    <h3>Extra elapsed times</h3>
+    <p class="sub">Each dot is one boat, time from the 14:06 start</p>
+    <div class="chart" id="c-extra" role="img" aria-label="Extra elapsed times: 15 boats between 1:58:54 and 2:07:48, one at 2:10:31 and one at 2:28:10"></div>
+  </div>
+  <div class="facts">
+    <div class="fact d"><div class="big">1:06</div><p>Covered the top 3 on the water over a two hour race. Under 1%.</p></div>
+    <div class="fact d"><div class="big">38<small>sec</small></div><p>Average gap between boats from 1st to 15th. Every half percent of pace cost about one place.</p></div>
+    <div class="fact d"><div class="big">8:54</div><p>Time for the first 15 Extras to cross the line.</p></div>
+    <div class="fact d"><div class="big">17:39</div><p>Gap from 16th to 17th, bigger than the 11:37 that covered 1st to 16th.</p></div>
+  </div>
+</section>
+
+<section id="photo">
+  <div class="head">
+    <div class="kicker">Closest calls</div>
+    <h2>Photo finishes</h2>
+  </div>
+  <p class="intro">The tightest gaps between neighbouring places on corrected time.</p>
+  <div class="photos">
+    <div class="photo"><span class="pill">Dinghy 11th v 12th</span><div class="gap">1<small>sec</small></div><div class="who">Robert Wood v Eugene Julius</div><div class="ctx">Both Extras, so it was 1 second on the water too, after 2:05:38.</div></div>
+    <div class="photo"><span class="pill">Dinghy 8th v 9th</span><div class="gap">7<small>sec</small></div><div class="who">Josh Young v Joshua Pieter Nankin</div><div class="ctx">Extra v Extra, RCYC v HYC.</div></div>
+    <div class="photo"><span class="pill">Multi 9th v 10th</span><div class="gap">9<small>sec</small></div><div class="who">Phillip Rentschler v Kobus Holtzhausen</div><div class="ctx">A Mosquito and a Hobie Tiger, 26 minutes apart on the water, 9 seconds apart on handicap.</div></div>
+    <div class="photo"><span class="pill">Multi 7th v 8th</span><div class="gap">11<small>sec</small></div><div class="who">Gregory Weeks v Graham Weyer</div><div class="ctx">A Hobie 16 and a Dart, split by 11 seconds after more than three hours.</div></div>
+  </div>
+</section>
+
+<section id="clubs">
+  <div class="head">
+    <div class="kicker">Clubs</div>
+    <h2>Who brought what</h2>
+  </div>
+  <p class="intro">The host club made up <strong>half the fleet</strong> and took 13 of the 20 top ten places across the two fleets. RCYC sent two boats and both finished top ten, one of them the multihull winner.</p>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Club</th><th class="n">Boats</th><th class="n">Top 10 places</th><th>Wins</th></tr></thead>
+      <tbody id="clubrows"></tbody>
+    </table>
+  </div>
+  <p class="note">Top 10 places counts the top ten in each fleet, 20 places in all. Wins counts fleet wins and class wins in classes with two or more finishers.</p>
+</section>
+
+<section id="crews">
+  <div class="head">
+    <div class="kicker">On the crew sheet</div>
+    <h2>Keeping it in the family</h2>
+  </div>
+  <div class="facts">
+    <div class="fact"><div class="big">12</div><p>boats had a helm and crew sharing a surname. Three of the five Mosquitos were sailed that way.</p></div>
+    <div class="fact"><div class="big">1st</div><p>The Stemmetts, Bradley and Saskia, won the Darts and were 2nd in the multihull fleet.</p></div>
+    <div class="fact"><div class="big">9:40</div><p>Foreman v Foreman in the Sonnets went to Kevin, 1st, ahead of Rob, 4th.</p></div>
+    <div class="fact"><div class="big">4</div><p>surnames turned up on two different boats: Foreman, Deane, Mair and Kallaway.</p></div>
+  </div>
+</section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="note">Based on the provisional results published on 25 October 2026 (dinghy fleet as at 9:40, multihull fleet as revised at 9:57), scored with Sailwave. Corrected times and places are as published. Gaps are worked out from those figures.</p>
+  </div>
+</footer>
+
+<div class="tip" id="tip" hidden></div>
+
+<script>
+const DATA = [{"f":"D","c":"Extra","sail":"907","club":"VYC","h":"Stephen du Toit","cr":"","rt":1140,"fin":57894,"el":7134,"co":6258,"st":"","pos":1,"epos":3},{"f":"D","c":"Extra","sail":"868","club":"MAC","h":"Brent Gray","cr":"","rt":1140,"fin":57940,"el":7180,"co":6298,"st":"","pos":2,"epos":4},{"f":"D","c":"Extra","sail":"891","club":"VYC","h":"Ryan Collins","cr":"","rt":1140,"fin":57960,"el":7200,"co":6316,"st":"","pos":3,"epos":5},{"f":"D","c":"Extra","sail":"905","club":"IYC","h":"Jason Deane","cr":"","rt":1140,"fin":58019,"el":7259,"co":6368,"st":"","pos":4,"epos":6},{"f":"D","c":"Extra","sail":"875","club":"VYC","h":"Alan Everett","cr":"","rt":1140,"fin":58058,"el":7298,"co":6402,"st":"","pos":5,"epos":7},{"f":"D","c":"Extra","sail":"911","club":"IYC","h":"David Mair","cr":"","rt":1140,"fin":58116,"el":7356,"co":6453,"st":"","pos":6,"epos":9},{"f":"D","c":"Active 15","sail":"1","club":"VYC","h":"Paul Allardice","cr":"Henning Kock","rt":1050,"fin":57579,"el":6819,"co":6494,"st":"","pos":7,"epos":2},{"f":"D","c":"Extra","sail":"892","club":"RCYC","h":"Josh Young","cr":"","rt":1140,"fin":58220,"el":7460,"co":6544,"st":"","pos":8,"epos":13},{"f":"D","c":"Extra","sail":"881","club":"HYC","h":"Joshua Pieter Nankin","cr":"","rt":1140,"fin":58228,"el":7468,"co":6551,"st":"","pos":9,"epos":14},{"f":"D","c":"Extra","sail":"877","club":"VYC","h":"Thomas Slater","cr":"","rt":1140,"fin":58274,"el":7514,"co":6591,"st":"","pos":10,"epos":15},{"f":"D","c":"Extra","sail":"903","club":"MAC","h":"Robert Wood","cr":"","rt":1140,"fin":58298,"el":7538,"co":6612,"st":"","pos":11,"epos":16},{"f":"D","c":"Extra","sail":"913","club":"IYC","h":"Eugene Julius","cr":"","rt":1140,"fin":58299,"el":7539,"co":6613,"st":"","pos":12,"epos":17},{"f":"D","c":"ILCA 7","sail":"160063","club":"TSC","h":"Craig Sterling","cr":"Cameron Sterling","rt":1103,"fin":58072,"el":7312,"co":6629,"st":"","pos":13,"epos":8},{"f":"D","c":"Extra","sail":"895","club":"VYC","h":"Sean Le Sueur","cr":"","rt":1140,"fin":58334,"el":7574,"co":6644,"st":"","pos":14,"epos":18},{"f":"D","c":"Extra","sail":"896","club":"IYC","h":"Alan Gie","cr":"","rt":1140,"fin":58347,"el":7587,"co":6655,"st":"","pos":15,"epos":19},{"f":"D","c":"Extra","sail":"880","club":"IYC","h":"Andrew Jones","cr":"","rt":1140,"fin":58378,"el":7618,"co":6682,"st":"","pos":16,"epos":20},{"f":"D","c":"ILCA 7","sail":"209409","club":"VYC","h":"Dealtry Pickford","cr":"","rt":1103,"fin":58139,"el":7379,"co":6690,"st":"","pos":17,"epos":10},{"f":"D","c":"Sonnet","sail":"555","club":"IYC","h":"Kevin Foreman","cr":"Ashleigh Cunningham","rt":1105,"fin":58177,"el":7417,"co":6712,"st":"","pos":18,"epos":12},{"f":"D","c":"Extra","sail":"865","club":"FBYC","h":"Emil Feuillette","cr":"","rt":1140,"fin":58428,"el":7668,"co":6726,"st":"","pos":19,"epos":23},{"f":"D","c":"Fireball","sail":"14422","club":"VYC","h":"Ian MacRobert","cr":"Kirsten Veenstra","rt":960,"fin":57308,"el":6548,"co":6821,"st":"","pos":20,"epos":1},{"f":"D","c":"Extra","sail":"872","club":"VYC","h":"Pieter Louw","cr":"","rt":1140,"fin":58591,"el":7831,"co":6869,"st":"","pos":21,"epos":25},{"f":"D","c":"Sonnet","sail":"539","club":"None","h":"Owen Middleton","cr":"Isla Middleton","rt":1105,"fin":58382,"el":7622,"co":6898,"st":"","pos":22,"epos":21},{"f":"D","c":"ILCA 7","sail":"37113","club":"VYC","h":"Graeme Cox","cr":"","rt":1103,"fin":58426,"el":7666,"co":6950,"st":"","pos":23,"epos":22},{"f":"D","c":"Sonnet","sail":"557","club":"VYC","h":"Beverly Ann Shaw","cr":"Claudia Richert","rt":1105,"fin":58549,"el":7789,"co":7049,"st":"","pos":24,"epos":24},{"f":"D","c":"Bosun","sail":"001","club":"DYC","h":"Daniel Pretorius","cr":"Henry Berends","rt":1198,"fin":59422,"el":8662,"co":7230,"st":"","pos":25,"epos":28},{"f":"D","c":"Sonnet","sail":"538","club":"IYC","h":"Rob Foreman","cr":"Vaughn Ashford","rt":1105,"fin":58818,"el":8058,"co":7292,"st":"","pos":26,"epos":27},{"f":"D","c":"Sonnet Assym","sail":"574","club":"VYC","h":"Philip Eltringham","cr":"Niel Wolters","rt":1080,"fin":58668,"el":7908,"co":7322,"st":"","pos":27,"epos":26},{"f":"D","c":"ILCA 4","sail":"188040","club":"IYC","h":"Sally Deane","cr":"","rt":1218,"fin":59737,"el":8977,"co":7370,"st":"","pos":28,"epos":31},{"f":"D","c":"Extra","sail":"863","club":"IYC","h":"Paul McDonald","cr":"","rt":1140,"fin":59650,"el":8890,"co":7798,"st":"","pos":29,"epos":30},{"f":"D","c":"ILCA 7","sail":"55802","club":"IYC","h":"Josh Mair","cr":"","rt":1103,"fin":59571,"el":8811,"co":7988,"st":"","pos":30,"epos":29},{"f":"D","c":"RS Feva XL","sail":"84","club":"VYC","h":"Alan Kessell","cr":"","rt":1248,"fin":60933,"el":10173,"co":8151,"st":"","pos":31,"epos":32},{"f":"D","c":"29er","sail":"531","club":"IYC","h":"Nicholas Breedt","cr":"Matthew Breedt","rt":900,"fin":58150,"el":7390,"co":8211,"st":"","pos":32,"epos":11},{"f":"D","c":"Gypsy","sail":"397","club":"SBYC","h":"Alan Kallaway","cr":"Susan Kallaway","rt":1245,"fin":61489,"el":10729,"co":8618,"st":"","pos":33,"epos":34},{"f":"D","c":"Bosun","sail":"6","club":"DYC","h":"Donoven Pinkney","cr":"Charles Kriel","rt":1198,"fin":61207,"el":10447,"co":8720,"st":"","pos":34,"epos":33},{"f":"D","c":"505","sail":"4437","club":"VYC","h":"Grant Ballantyne","cr":"Sean Ballantyne","rt":892,"fin":null,"el":null,"co":null,"st":"DNS"},{"f":"D","c":"Extra","sail":"878","club":"IYC","h":"Brent Hayward","cr":"","rt":1140,"fin":null,"el":null,"co":null,"st":"RET"},{"f":"D","c":"ILCA 6","sail":"191033","club":"SBYC","h":"Ashton Kallaway","cr":"","rt":1156,"fin":null,"el":null,"co":null,"st":"RET"},{"f":"M","c":"Hobie 14","sail":"63314","club":"RCYC","h":"John Ryall","cr":"","rt":1.448,"fin":62562,"el":12102,"co":8358,"st":"","pos":1,"epos":14},{"f":"M","c":"Dart","sail":"3862","club":"VYC","h":"Bradley Stemmett","cr":"Saskia Stemmett","rt":1.24,"fin":60931,"el":10471,"co":8444,"st":"","pos":2,"epos":6},{"f":"M","c":"Mosquito","sail":"2012","club":"VYC","h":"Brent Warren","cr":"","rt":1.206,"fin":60905,"el":10445,"co":8661,"st":"","pos":3,"epos":5},{"f":"M","c":"Mosquito","sail":"2015","club":"VYC","h":"Kevin Webb","cr":"Alex Webb","rt":1.136,"fin":60532,"el":10072,"co":8866,"st":"","pos":4,"epos":3},{"f":"M","c":"Mosquito","sail":"2016","club":"VYC","h":"Mel Meyer","cr":"Francois Cantin","rt":1.171,"fin":60946,"el":10486,"co":8955,"st":"","pos":5,"epos":7},{"f":"M","c":"Mosquito","sail":"2020","club":"VYC","h":"Greg Harrowsmith","cr":"William Harrowsmith","rt":1.121,"fin":60719,"el":10259,"co":9152,"st":"","pos":6,"epos":4},{"f":"M","c":"Hobie 16","sail":"112934","club":"IYC","h":"Gregory Weeks","cr":"Declan Dott","rt":1.227,"fin":61841,"el":11381,"co":9275,"st":"","pos":7,"epos":9},{"f":"M","c":"Dart","sail":"4354","club":"VYC","h":"Graham Weyer","cr":"Russel Harrod","rt":1.24,"fin":61975,"el":11515,"co":9286,"st":"","pos":8,"epos":10},{"f":"M","c":"Mosquito","sail":"2004","club":"VYC","h":"Phillip Rentschler","cr":"Evan Rentschler","rt":1.171,"fin":61418,"el":10958,"co":9358,"st":"","pos":9,"epos":8},{"f":"M","c":"Hobie Tiger","sail":"2782","club":"VYC","h":"Kobus Holtzhausen","cr":"Toby Heywood","rt":1.0,"fin":59827,"el":9367,"co":9367,"st":"","pos":10,"epos":1},{"f":"M","c":"Hobie 16","sail":"112489","club":"FBYC","h":"Murray B Duggan","cr":"Jenna Smith","rt":1.227,"fin":61996,"el":11536,"co":9402,"st":"","pos":11,"epos":11},{"f":"M","c":"Dart","sail":"5407","club":"VYC","h":"Paul Kotze","cr":"Polla van der Westhuizen","rt":1.24,"fin":62462,"el":12002,"co":9679,"st":"","pos":12,"epos":12},{"f":"M","c":"Dart","sail":"4544","club":"Other","h":"Petrus Hendrik Viljoen","cr":"Wessel Viljoen","rt":1.24,"fin":62534,"el":12074,"co":9737,"st":"","pos":13,"epos":13},{"f":"M","c":"Dart","sail":"7051","club":"VYC","h":"Edgar Morris","cr":"Mark Morris","rt":1.24,"fin":62736,"el":12276,"co":9900,"st":"","pos":14,"epos":15},{"f":"M","c":"Dart","sail":"3642","club":"VYC","h":"J Kassner","cr":"","rt":1.24,"fin":63062,"el":12602,"co":10163,"st":"","pos":15,"epos":16},{"f":"M","c":"Tornado","sail":"41","club":"VYC","h":"Danie Snyman","cr":"Kahl Kritzinger","rt":0.96,"fin":60244,"el":9784,"co":10192,"st":"","pos":16,"epos":2},{"f":"M","c":"Dart","sail":"3605","club":"VYC","h":"Pieter van Staden","cr":"Marco van Staden","rt":1.24,"fin":null,"el":null,"co":null,"st":"DNF"}];
+(function(){
+const NS="http://www.w3.org/2000/svg";
+const fin = DATA.filter(r=>r.el);
+const pad2=n=>String(n).padStart(2,"0");
+function dur(s){s=Math.round(s);const h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=s%60;return h?`${h}:${pad2(m)}:${pad2(x)}`:`${m}:${pad2(x)}`}
+function clock(s){return `${pad2(Math.floor(s/3600))}:${pad2(Math.floor(s%3600/60))}:${pad2(s%60)}`}
+const fleetName=f=>f==="D"?"Dinghy":"Multihull";
+const crewTxt=r=>r.cr?`${r.h} and ${r.cr}`:r.h;
+function el(tag,attrs,parent){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e}
+function txt(parent,x,y,s,cls,anchor){const t=el("text",{x,y,class:cls||"ax","text-anchor":anchor||"start"},parent);t.textContent=s;return t}
+function svgIn(id,w,h){const box=document.getElementById(id);box.innerHTML="";const s=el("svg",{viewBox:`0 0 ${w} ${h}`,width:w,height:h},box);return s}
+const tip=document.getElementById("tip");
+function showTip(e,html){tip.innerHTML=html;tip.hidden=false;const p=e.touches?e.touches[0]:e;let x=p.clientX+14,y=p.clientY+14;const r=tip.getBoundingClientRect();if(x+r.width>innerWidth-8)x=p.clientX-r.width-14;if(y+r.height>innerHeight-8)y=p.clientY-r.height-14;tip.style.left=Math.max(8,x)+"px";tip.style.top=Math.max(8,y)+"px"}
+function hideTip(){tip.hidden=true}
+function hover(node,html){node.setAttribute("tabindex","0");node.addEventListener("pointerenter",e=>showTip(e,html));node.addEventListener("pointermove",e=>showTip(e,html));node.addEventListener("pointerleave",e=>{if(e.pointerType!=="touch")hideTip()});node.addEventListener("focus",()=>{const b=node.getBoundingClientRect();showTip({clientX:b.right,clientY:b.bottom},html)});node.addEventListener("blur",hideTip)}
+document.addEventListener("scroll",hideTip,{passive:true});
+document.addEventListener("pointerdown",e=>{const c=e.target&&e.target.classList;if(!c||!c.contains("hit"))hideTip()});
+function boatTip(r,extra){return `<b>${r.c} ${r.sail}</b>${crewTxt(r)}, ${r.club}<br>${extra}`}
+function marker(g,fleet,x,y,r,cls){if(fleet==="M"){const s=r*1.15;return el("rect",{x:x-s/1.414*1,y:y-s/1.414*1,width:s*1.414,height:s*1.414,transform:`rotate(45 ${x} ${y})`,class:(cls||"mk-m")+" ring",rx:1},g)}return el("circle",{cx:x,cy:y,r,class:(cls||"mk-d")+" ring"},g)}
+const W=id=>Math.max(300,document.getElementById(id).clientWidth);
+
+/* 1. finish line timeline */
+function drawLine(){
+  const w=W("c-line"),narrow=w<560;
+  const t0=15*3600+50*60,t1=17*3600+35*60;
+  const L=8,R=8,r=narrow?3.6:4.6,step=r*2+1.5;
+  const x=t=>L+(t-t0)/(t1-t0)*(w-L-R);
+  const lanes=[["D","Dinghies"],["M","Multihulls"]];
+  // stack dots upward per lane
+  const placed={D:[],M:[]};let maxLv={D:0,M:0};
+  for(const f of ["D","M"]){
+    const rows=fin.filter(d=>d.f===f).sort((a,b)=>a.fin-b.fin);
+    for(const d of rows){const cx=x(d.fin);let lv=0;while(placed[f].some(p=>p.lv===lv&&Math.abs(p.cx-cx)<r*2+1))lv++;placed[f].push({d,cx,lv});maxLv[f]=Math.max(maxLv[f],lv)}
+  }
+  const laneH=f=>(maxLv[f]+1)*step+40;
+  const top=10,h=top+laneH("D")+laneH("M")+30;
+  const s=svgIn("c-line",w,h);
+  const bandA=x(16*3600+4*60+54),bandB=x(16*3600+14*60+54);
+  el("rect",{x:bandA,y:top-2,width:bandB-bandA,height:laneH("D")-14,class:"bandr",rx:3},s);
+  // grid
+  const tickStep=narrow?1800:900;
+  for(let t=16*3600;t<=t1;t+=tickStep){el("line",{x1:x(t),x2:x(t),y1:top-4,y2:h-24,class:"gl"},s);txt(s,x(t),h-8,`${pad2(Math.floor(t/3600))}:${pad2(t%3600/60)}`,"ax","middle")}
+  let y0=top;
+  for(const [f,name] of lanes){
+    const base=y0+laneH(f)-22;
+    el("line",{x1:L,x2:w-R,y1:base+r+2,y2:base+r+2,class:"base"},s);
+    txt(s,L,y0+14,name,"lab-b");
+    const g=el("g",{},s);
+    for(const p of placed[f]){const cy=base-p.lv*step;marker(g,f,p.cx,cy,r,f==="D"?"mk-d":"mk-m");const hit=el("circle",{cx:p.cx,cy,r:r+3,class:"hit"},s);hover(hit,boatTip(p.d,`Finished <span class="t">${clock(p.d.fin)}</span><br>${p.d.pos}${ord(p.d.pos)} of ${fleetCount(f)} on handicap`))}
+    y0+=laneH(f);
+  }
+  if(narrow)txt(s,bandB+6,top+14,"21 boats in 10 min","val","start");else txt(s,(bandA+bandB)/2,top+14,"21 boats in 10 min","val","middle");
+}
+const ord=n=>{const v=n%100;if(v>=11&&v<=13)return"th";return({1:"st",2:"nd",3:"rd"})[n%10]||"th"};
+const fleetCount=f=>fin.filter(d=>d.f===f).length;
+
+/* 2. gap chart */
+function drawGap(){
+  const w=W("c-gap"),h=Math.round(Math.min(340,Math.max(240,w*.42)));
+  const L=40,R=10,T=10,B=34;
+  const s=svgIn("c-gap",w,h);
+  const maxPos=34,maxMin=45;
+  const x=p=>L+(p-1)/(maxPos-1)*(w-L-R),y=m=>T+(1-m/maxMin)*(h-T-B);
+  for(let m=0;m<=40;m+=10){el("line",{x1:L,x2:w-R,y1:y(m),y2:y(m),class:m?"gl":"base"},s);txt(s,L-8,y(m)+4,m+"m","ax","end")}
+  for(const p of [1,5,10,15,20,25,30,34]){txt(s,x(p),h-14,p,"ax","middle")}
+  txt(s,(L+w-R)/2,h-1,"Finishing place","ax","middle");
+  const wins={D:Math.min(...fin.filter(d=>d.f==="D").map(d=>d.co)),M:Math.min(...fin.filter(d=>d.f==="M").map(d=>d.co))};
+  const r=w<560?3.6:4.4;
+  for(const f of ["M","D"]){
+    const g=el("g",{},s);
+    for(const d of fin.filter(q=>q.f===f)){const gap=d.co-wins[f];const cx=x(d.pos),cy=y(gap/60);marker(g,f,cx,cy,r);const hit=el("circle",{cx,cy,r:r+4,class:"hit"},s);hover(hit,boatTip(d,`${d.pos}${ord(d.pos)} ${fleetName(f).toLowerCase()} fleet<br>Corrected <span class="t">${dur(d.co)}</span>, <span class="t">${dur(gap)}</span> behind`))}
+  }
+  // selective labels
+  const lastD=fin.filter(d=>d.f==="D").sort((a,b)=>b.co-a.co)[0];
+  txt(s,x(lastD.pos)-8,y((lastD.co-wins.D)/60)+4,"41:02","val","end");
+  const lastM=fin.filter(d=>d.f==="M").sort((a,b)=>b.co-a.co)[0];
+  txt(s,x(lastM.pos)+8,y((lastM.co-wins.M)/60)+4,"30:34","val","start");
+}
+
+/* 3. slope chart multihull */
+function drawSlope(){
+  const w=W("c-slope"),rows=fin.filter(d=>d.f==="M");
+  const n=rows.length,rowH=22,T=26,h=T+n*rowH+6;
+  const lw=Math.min(118,w*.32),x1=lw,x2=w-lw;
+  const s=svgIn("c-slope",w,h);
+  txt(s,x1,12,"Across the line","ax","end");txt(s,x2,12,"On handicap","ax","start");
+  const y=p=>T+(p-.5)*rowH;
+  const hot=new Set(["63314","41","2782"]);
+  const short=c=>c.replace("Hobie Tiger","Tiger").replace("Hobie ","H");
+  const draw=(list,front)=>{for(const d of list){
+    const isHot=hot.has(d.sail);if(isHot!==front)continue;
+    el("line",{x1,y1:y(d.epos),x2,y2:y(d.pos),class:isHot?"ln-h":"ln-g"},s);
+    el("circle",{cx:x1,cy:y(d.epos),r:3.5,class:(isHot?"mk-h":"mk-g")+" ring"},s);
+    el("circle",{cx:x2,cy:y(d.pos),r:3.5,class:(isHot?"mk-h":"mk-g")+" ring"},s);
+  }};
+  draw(rows,false);draw(rows,true);
+  for(const d of rows){
+    const isHot=hot.has(d.sail),cls=isHot?"lab-b":"lab";
+    const nm=w<420?short(d.c):d.c;
+    const a=txt(s,x1-10,y(d.epos)+4,`${nm}  ${d.epos}`,cls,"end");
+    const b=txt(s,x2+10,y(d.pos)+4,`${d.pos}  ${nm}`,cls,"start");
+    const html=boatTip(d,`${d.epos}${ord(d.epos)} across the line, <span class="t">${dur(d.el)}</span><br>${d.pos}${ord(d.pos)} on handicap, <span class="t">${dur(d.co)}</span>`);
+    const hit=el("rect",{x:0,y:y(d.epos)-rowH/2,width:x1+4,height:rowH,class:"hit"},s);hover(hit,html);
+    const hit2=el("rect",{x:x2-4,y:y(d.pos)-rowH/2,width:w-x2+4,height:rowH,class:"hit"},s);hover(hit2,html);
+  }
+}
+
+/* 4. class performance */
+function drawClass(){
+  const w=W("c-class");
+  const out=[];
+  for(const f of ["D","M"]){
+    const F=fin.filter(d=>d.f===f),win=Math.min(...F.map(d=>d.co));
+    const best={};for(const d of F.sort((a,b)=>a.co-b.co)){if(!best[d.c])best[d.c]={d,n:0};best[d.c].n++}
+    out.push({hdr:f==="D"?"Dinghy fleet":"Multihull fleet"});
+    Object.values(best).sort((a,b)=>a.d.co-b.d.co).forEach(b=>out.push({f,d:b.d,n:b.n,pct:(b.d.co-win)/win*100,tie:f==="D"?b.d.el*1000/win:b.d.el/win}));
+  }
+  const rowH=26,hdrH=30,T=4;
+  const h=T+out.reduce((a,o)=>a+(o.hdr?hdrH:rowH),0)+4;
+  const lw=Math.min(150,Math.max(108,w*.24)),vR=56,max=40;
+  const x=p=>lw+p/max*(w-lw-vR);
+  const s=svgIn("c-class",w,h);
+  let y=T;
+  for(const o of out){
+    if(o.hdr){txt(s,0,y+20,o.hdr.toUpperCase(),"ax");y+=hdrH;continue}
+    const cy=y+rowH/2;
+    txt(s,lw-10,cy+4,o.d.c,"lab","end");
+    const bw=Math.max(o.pct>0?3:0,x(o.pct)-lw);
+    if(o.pct===0){el("circle",{cx:lw+3,cy,r:4,class:(o.f==="D"?"mk-d":"mk-m")},s);txt(s,lw+14,cy+4,"winner","val")}
+    else{el("path",{d:`M${lw} ${cy-6} h${bw-4} a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h${-(bw-4)} z`,class:o.f==="D"?"mk-d":"mk-m"},s);txt(s,lw+bw+6,cy+4,"+"+o.pct.toFixed(1)+"%","val")}
+    const hit=el("rect",{x:0,y,width:w,height:rowH,class:"hit"},s);
+    const rt=o.f==="D"?String(o.d.rt):o.d.rt.toFixed(3);const tie=o.f==="D"?o.tie.toFixed(0):o.tie.toFixed(3);
+    hover(hit,`<b>${o.d.c}</b>Best: ${crewTxt(o.d)}, ${o.d.pos}${ord(o.d.pos)} in fleet<br>${o.n} boat${o.n>1?"s":""} in class<br>${o.pct===0?"Fleet winner":`Rating ${rt}, needed ${tie} to tie the winner`}`);
+    y+=rowH;
+  }
+  el("line",{x1:lw,x2:lw,y1:T,y2:h-4,class:"base"},s);
+}
+
+/* 5. winning margins */
+function drawMargin(){
+  const w=W("c-margin");
+  const rows=[];
+  for(const f of ["D","M"]){const by={};fin.filter(d=>d.f===f).forEach(d=>(by[d.c]=by[d.c]||[]).push(d));for(const c in by){const L=by[c].sort((a,b)=>a.co-b.co);if(L.length<2)continue;rows.push({f,c,n:L.length,w:L[0],s:L[1],gap:L[1].co-L[0].co,pct:(L[1].co-L[0].co)/L[0].co*100})}}
+  rows.sort((a,b)=>a.pct-b.pct);
+  const rowH=34,T=4,h=T+rows.length*rowH+4,lw=Math.min(120,Math.max(84,w*.18)),vR=104,max=22;
+  const x=p=>lw+p/max*(w-lw-vR);
+  const s=svgIn("c-margin",w,h);
+  rows.forEach((o,i)=>{const cy=T+i*rowH+rowH/2;
+    txt(s,lw-10,cy+1,o.c,"lab-b","end");txt(s,lw-10,cy+14,`${o.n} boats`,"ax","end");
+    const bw=Math.max(5,x(o.pct)-lw);
+    el("path",{d:`M${lw} ${cy-7} h${bw-4} a4 4 0 0 1 4 4 v6 a4 4 0 0 1 -4 4 h${-(bw-4)} z`,class:o.f==="D"?"mk-d":"mk-m"},s);
+    const v=txt(s,lw+bw+7,cy+4,dur(o.gap)+"  ","val");const sp=el("tspan",{class:"ax"},v);sp.textContent=o.pct.toFixed(1)+"%";
+    const hit=el("rect",{x:0,y:cy-rowH/2,width:w,height:rowH,class:"hit"},s);
+    hover(hit,`<b>${o.c}</b>Won by ${crewTxt(o.w)}, ${o.w.club}<br>2nd ${o.s.h}, <span class="t">${dur(o.gap)}</span> back`);
+  });
+  el("line",{x1:lw,x2:lw,y1:T,y2:h-4,class:"base"},s);
+}
+
+/* 6. Extra strip */
+function drawExtra(){
+  const w=W("c-extra"),rows=fin.filter(d=>d.c==="Extra").sort((a,b)=>a.el-b.el);
+  const t0=1*3600+58*60,t1=2*3600+30*60,L=10,R=10,r=w<560?4:5,step=r*2+1.5;
+  const x=t=>L+(t-t0)/(t1-t0)*(w-L-R);
+  const placed=[];let mx=0;for(const d of rows){const cx=x(d.el);let lv=0;while(placed.some(p=>p.lv===lv&&Math.abs(p.cx-cx)<r*2+1))lv++;placed.push({d,cx,lv});mx=Math.max(mx,lv)}
+  const T=34,base=T+(mx)*step+r,h=base+r+40;
+  const s=svgIn("c-extra",w,h);
+  for(let t=2*3600;t<=t1;t+=300){el("line",{x1:x(t),x2:x(t),y1:T-10,y2:base+r+4,class:"gl"},s);if((t-7200)%(w<560?600:300)===0)txt(s,x(t),h-20,`${Math.floor(t/3600)}:${pad2(t%3600/60)}`,"ax","middle")}
+  el("line",{x1:L,x2:w-R,y1:base+r+4,y2:base+r+4,class:"base"},s);
+  // bracket for first 15
+  const a=x(rows[0].el),b=x(rows[14].el);
+  el("path",{d:`M${a} ${T-6} v-6 H${b} v6`,class:"ln-g",style:"stroke:var(--ink-3)"},s);
+  txt(s,(a+b)/2,T-16,"15 boats in 8:54","val","middle");
+  const g=el("g",{},s);
+  for(const p of placed){const cy=base-p.lv*step;marker(g,"D",p.cx,cy,r);const hit=el("circle",{cx:p.cx,cy,r:r+4,class:"hit"},s);hover(hit,boatTip(p.d,`${rows.indexOf(p.d)+1}${ord(rows.indexOf(p.d)+1)} Extra, <span class="t">${dur(p.d.el)}</span>`))}
+  const last=placed[placed.length-1];txt(s,last.cx-r-6,base-last.lv*step-r-6,"+17:39 to the next boat","val","end");
+}
+
+/* clubs table */
+function clubs(){
+  const C={};
+  const winsBy={};
+  const addWin=(club,w)=>(winsBy[club]=winsBy[club]||[]).push(w);
+  for(const f of ["D","M"]){const F=fin.filter(d=>d.f===f).sort((a,b)=>a.co-b.co);addWin(F[0].club,(f==="D"?"Dinghy":"Multihull")+" fleet");const by={};F.forEach(d=>(by[d.c]=by[d.c]||[]).push(d));for(const c in by)if(by[c].length>1)addWin(by[c][0].club,c)}
+  for(const d of DATA){const k=(d.club==="None"||d.club==="Other")?"Unattached / other":d.club;C[k]=C[k]||{n:0,t:0};C[k].n++;if(d.pos&&d.pos<=10)C[k].t++;if(winsBy[d.club]&&!C[k].w)C[k].w=winsBy[d.club]}
+  const max=Math.max(...Object.values(C).map(c=>c.n));
+  const rows=Object.entries(C).sort((a,b)=>b[1].n-a[1].n||b[1].t-a[1].t||(a[0].startsWith("Un")?1:-1));
+  document.getElementById("clubrows").innerHTML=rows.map(([k,c])=>`<tr><td class="club">${k}</td><td class="n">${c.n}<span class="bar" style="width:${Math.round(c.n/max*90)}px"></span></td><td class="n">${c.t}</td><td class="wins">${c.w?c.w.join(", "):"<span style=\"color:var(--ink-3)\">None</span>"}</td></tr>`).join("");
+}
+
+function drawAll(){drawLine();drawGap();drawSlope();drawClass();drawMargin();drawExtra()}
+clubs();drawAll();
+let rt;let lastW=innerWidth;addEventListener("resize",()=>{if(innerWidth===lastW)return;lastW=innerWidth;clearTimeout(rt);rt=setTimeout(drawAll,120)});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(drawAll);
+})();
+</script>
+
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "04ce4cc91ef14bfda1c32ba34b668030"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
